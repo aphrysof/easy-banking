@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="bg-[#FAFAFA]">
     <Navbar handleClickLogin = {handleClickLogin} />
     <Loginform isOpen = {isOpen} />
     <Hero/>

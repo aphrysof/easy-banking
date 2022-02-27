@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import logo from '../images/logo.svg'
 import '../index.css'
-import Button from './Button'
 import menuicon from '../images/icon-hamburger.svg'
 import closeicon from '../images/icon-close.svg'
 
