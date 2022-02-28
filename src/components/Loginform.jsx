@@ -11,7 +11,7 @@ const Loginform = ({ isOpen }) => {
     {isOpen && 
     <form className='absolute z-10 bg-white py-10'>
            <div className='grid w-96 h-96 m-5'>
-               <h1 className='text-xl text-center '>LOGIN</h1>
+               <h1 className='text-xl text-center font-bold '>LOGIN</h1>
                <div className='relative flex items-center text-gray-400 focus-within:text-gray-600'>
                 <FaRegEnvelope className = "w-5 h-5 absolute ml-3 pointer-events-none"/>
                <input
@@ -34,7 +34,7 @@ const Loginform = ({ isOpen }) => {
                />
                </div>
               
-               <div className='flex items-center gap-2'>
+               <div className='flex items-center gap-2 pb-5'>
                <input type= "checkbox" /><label>Remember me</label>
                </div>
                <div className='flex flex-col'>
