@@ -4,8 +4,8 @@ import {blog} from './BlogData'
 const Blog = () => {
   return (
 
-    <div className = "p-20 bg-[#F9FAFB]">
-        <h1 className = "text-4xl text-slate-700 pb-10">Latest Articles</h1>
+    <div className = "p-5 md:p-20 bg-[#F9FAFB]">
+        <h1 className = "text-4xl text-slate-700 pb-10 text-center md:text-4xl text-slate-700 pb-10">Latest Articles</h1>
         <div className = "grid md:flex flex-row gap-5 ">
         {blog.map((blog) => {
             return(

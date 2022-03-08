@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
-import logo from '../images/logo.svg'
+import logo from '../images/logo1.svg'
 import '../index.css'
 import menuicon from '../images/icon-hamburger.svg'
 import closeicon from '../images/icon-close.svg'
 
-const Navbar = ({ handleClickLogin }) => {
+const Navbar = ({openModal}) => {
 
 const links = [
     {name: 'Home', links: "/"},
@@ -31,8 +31,8 @@ const [open, setOpen] = useState(false);
                     
             </ul>
 
-            <button onClick={handleClickLogin}
-             className = "hidden md:flex justify-center w-40 bg-[#00ccab] text-[#ffffff] font-['Public_sans'] py-2 px-3 md:mr-5 rounded-full">
+            <button onClick = {openModal}
+             className = "hidden md:flex justify-center w-40 bg-[#00ccab] text-[#ffffff] font-['Public_sans'] py-2 px-3 md:mr-5 rounded-full" type = "button" data-modal-toggle="authentication-modal">
             Request Invite
             </button>
             
@@ -42,7 +42,7 @@ const [open, setOpen] = useState(false);
             </div>
 
         </div>
-        <div className = "md:hidden relative ">
+        <div className = "md:hidden relative m-5">
             {
                 open &&  <ul className = "absolute z-10 grid justify-center text-slate-800 bg-white rounded w-full">
                 {links.map((link) => {
