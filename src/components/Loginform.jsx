@@ -13,7 +13,7 @@ const closeModal = (e) => {
 }
   return ReactDom.createPortal (
     <div ref = {modalRef} onClick = {closeModal} className = "fixed top-0 left-0 bottom-0 right-0 h-screen flex items-center justify-center bg-[#000000b3] z-10">
-    <div className = 'relative grid bg-white flex items-center justify-center'>
+    <div className = 'rounded-md relative grid bg-white flex items-center justify-center'>
          <form className=' w-96 m-5'>
                <h1 className='text-xl text-center font-bold pb-5'>LOGIN</h1>
                <div className='flex flex-col gap-5 pb-5'>
@@ -49,7 +49,7 @@ const closeModal = (e) => {
           
     </form>
     <div className='flex flex-row gap-5 justify-between m-5'>
-                  <button className='md:flex justify-center items-center gap-1 border w-96 py-2 text-[#DB4437] outline-inherit hover:bg-[#DB4437] hover:text-white rounded-md'
+                  <button className='flex rounded-md md:flex justify-center items-center gap-1 border w-96 py-2 text-[#DB4437] outline-inherit hover:bg-[#DB4437] hover:text-white rounded-md'
                    onClick={SignInWithGoogle}><FaGoogle/>Google</button>
                </div>
     </div>

@@ -9,7 +9,7 @@ import Button from './Button'
 const Footer = () => {
   return (
     <>
-    <div className = "hidden md:bg-[#2D314D] flex flex-row py-20 gap-20">
+    <div className = "hidden md:flex bg-[#2D314D] flex flex-row py-20 gap-20">
     <div className = "grid gap-10 px-20">
     <img src={logo} alt = "logo" className = "fill-white"/>
     <div className = "flex md:flex flex-row gap-3 pt-5">

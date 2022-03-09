@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth } from "firebase/auth"
+import { getAuth, onAuthStateChanged } from "firebase/auth"
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyAM9jItaJ3wrcC6QcCRE_ZOriAt_3f87Pc",
@@ -14,4 +15,9 @@ const app = initializeApp(firebaseConfig);
 
 //declaring the authentication variable 
 
-export const authentication = getAuth(app)
+export const authentication = getAuth(app);
+onAuthStateChanged(authentication, user => {
+  if(user !==null) {
+    console.log(user.displayName);
+  }
+})
