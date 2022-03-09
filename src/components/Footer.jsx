@@ -35,9 +35,9 @@ const Footer = () => {
             <li className= "pb-3"><a href = "#privacy-policy">Privacy Policy</a></li>
         </ul>
     </div>
-    <div>
+    <div className='relative left-[8rem]'>
       <Button>Request Invite</Button>
-      <p className='text-white'>&copy;Easybank.All Rights Reserved.</p>
+      <p className='text-white py-5'>&copy;Easybank.All Rights Reserved.</p>
     </div>
     </div>
 
