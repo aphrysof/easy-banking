@@ -9,6 +9,7 @@ const modalRef = useRef();
 const closeModal = (e) => {
   if(e.target === modalRef.current) {
     setShowModal(false)
+    console.log('hello')
   }
 }
   return ReactDom.createPortal (
